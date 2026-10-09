@@ -2471,7 +2471,7 @@ const scrollToTop = () => {
                 darkMode ? "text-[#cbd5e1]" : "text-[#405574]"
               }`}
             >
-              Name
+              Name <span className="text-red-500">*</span>
             </label>
 
             <input
@@ -2481,6 +2481,7 @@ const scrollToTop = () => {
 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               type="text"
               placeholder="Your name"
+              required
               className={`h-[36px] w-full rounded-md border px-3 text-sm outline-none transition ${
                 darkMode
                   ? "border-[#334155] bg-[#182235] text-[#f1f5f9] placeholder:text-[#64748b] focus:border-[#60a5fa]"
@@ -2497,7 +2498,7 @@ onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 darkMode ? "text-[#cbd5e1]" : "text-[#405574]"
               }`}
             >
-              Email
+              Email <span className="text-red-500">*</span>
             </label>
 
             <input
@@ -2507,6 +2508,7 @@ onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               type="email"
               placeholder="Your email"
+              required
               className={`h-[36px] w-full rounded-md border px-3 text-sm outline-none transition ${
                 darkMode
                   ? "border-[#334155] bg-[#182235] text-[#f1f5f9] placeholder:text-[#64748b] focus:border-[#60a5fa]"
@@ -2525,7 +2527,7 @@ onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               darkMode ? "text-[#cbd5e1]" : "text-[#405574]"
             }`}
           >
-            Message
+            Message <span className="text-red-500">*</span>
           </label>
 
           <textarea
@@ -2535,6 +2537,7 @@ onChange={(e) => setFormData({ ...formData, email: e.target.value })}
 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             placeholder="Your message"
             rows="2"
+            required
             className={`h-[85px] w-full resize-none rounded-md border px-3 py-2 text-sm outline-none transition ${
               darkMode
                 ? "border-[#334155] bg-[#182235] text-[#f1f5f9] placeholder:text-[#64748b] focus:border-[#60a5fa]"
